@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-height: 80vh;
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#errorimg{
+    border: 2px dotted blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 19px;
+    height: 90%;
+}
+#errorimg img{
+    height: 100%;
+    width: 100%;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#errorbtn{
+    background-color:white;
+    border: 3px dotted blue;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+#errorbtn a{
+    text-decoration: none;
+    color:rgba(49, 107, 214, 0.938);
+    padding: 3px 10px;
+    font-family: Zen Dots;
+}

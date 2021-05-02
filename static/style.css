@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Trochut&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+*{
+    padding:0px;
+    margin: 0px;
+}
+/* #navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+} */
+#navbar::before{
+    content: "";
+    background: black;
+    position: absolute;
+    width: 100%;
+    height: 65px;
+    z-index: -1;
+}
+/* @media (max-width:446px) {
+    #navbar::before{
+        height: 130px;
+    }
+    #footer{
+        grid-gap: 5px;
+    }
+} */
+.navigation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: "Balsamiq Sans";
+    
+}
+
+.navigation li{
+    list-style: none;
+    padding: 21px 23px;
+}
+.navigation li a{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.navigation li a:hover{
+    color: white;
+    background-color:grey;
+    border-radius: 10px;
+    padding: 0px 5px;
+}
+#mainContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 88vh;
+    padding: 22px 23px  0px 23px;
+    /* border: 2px solid red; */
+}
+#mainContent::before{
+    content: "";
+    background: url("https://images.unsplash.com/photo-1601643157105-cfbc55da8fab?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFuY2UlMjBhY2FkZW15fGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80") no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+.contentBox1{
+    font-size: 3rem;
+    font-family: "Balsamiq Sans";
+    padding: 22px 23px;
+    text-align: center;
+}
+.contentBox2{
+    font-size: 1.5rem;
+    padding: 8px 23px;
+    font-family: "Trochut";
+}
+
+#aboutme{
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    background-color: rgb(211, 211, 211);
+}
+.aboutme-data{
+    justify-content: center;
+    align-items: center;
+    shape-outside: circle(50%);
+    margin: 10px 0px 30px 0px;
+    font-family: "Zen Dots";
+}
+.aboutme-data h3{
+    font-family: "Balsamiq Sans";
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+.aboutme-img img{
+    /* display: flex; */
+    height: 300px;
+    border-radius: 150px;
+}
+.aboutme-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 300px;
+    border-radius: 150px; */
+}
+#myself {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#myself p{
+    padding: 16px 10px;
+}
+/* #aboutMe-sect::before{
+    content: "";
+    background: url(https://png.pngtree.com/thumb_back/fw800/background/20190220/ourmid/pngtree-purple-rose-pattern-graphic-design-atmospheric-background-image_10128.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    opacity: 0.4;
+    
+} */
+#footer{
+    display: grid;
+    background-color: black;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+}
+.footerBox{
+    display: grid;
+    color: white;
+    padding: 15px;
+    
+}
+#footerBox-1 h3{
+    font-family: "Balsamiq Sans";
+    }
+#footerBox-3 ul li{
+    display: flex;
+    font-size: 1rem;
+    font-family: "Balsamiq Sans";    
+    list-style: none;
+}
+
+#footerBox-3 ul li a{
+    text-decoration: none;
+    color: pink;
+    font-family: "Trochut";
+    font-size: 1.2rem;
+}
+#footerBox-3 ul li a:hover{
+    color: turquoise;
+    font-size: 1.3rem;
+}
+#footerBox-3 h3{
+/* text-align: center; */
+font-family: "Balsamiq Sans";
+}
+#copyright p{
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-family: "Trochut";
+}
+/* device selective css */
+@media (max-width:"768px") {
+    #contact-form{
+        min-height: 62vh;
+    }
+}

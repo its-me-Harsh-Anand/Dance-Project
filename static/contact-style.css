@@ -1,0 +1,57 @@
+#contact-form h3{
+    font-size: 2.0rem;
+    font-family: cursive;
+}
+#contact-form{
+    min-height: 90vh;
+    /* width: 100vw; */
+    display: flex;
+    flex-direction: column;
+    padding: 23px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #e0e4cb; */
+    
+}
+#contbef::before{
+    content: "";
+    background: url('/static/img/meeting.png') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /* top: 15px; */
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+form{
+    border: 10px solid pink;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+}
+.input{
+    border: 2px solid grey;
+    display: block;
+    margin: 10px;
+    box-shadow: 2px 2px 2px 1px #dcd5d5;
+    padding: 5px;
+    width: 400px;
+    outline: none;
+    border-radius: 10px;
+    font-family: monospace;
+}
+#more-aboutme{
+    height: 200px;   
+}
+.sub-but{
+    padding: 4px 10px;
+    box-shadow: 2px 2px 2px #e0dbdb;
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid grey;
+    position: relative;
+    left: 185px;
+    background-color:red;
+    cursor: pointer;
+}
